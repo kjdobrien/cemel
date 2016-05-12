@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name = "viewport" content "width = device-width, initial-scale = 1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link href = "css/styles.css" rel = "stylesheet">
+		<link rel="stylesheet" href="scrollbar/jquery.mCustomScrollbar.css" />
+		<link href = "css/styles.css" rel = "stylesheet">
+		<title>Cork Electronic Music Event Listings</title>
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container bars">
+				<a href = "#" class = "navbar-brand bars">Cork Electronic Music Event Listings</a>
+				<ul class = "nav navbar-nav navbar-right bars">
+				
+							
+							<li class = "fuaa"><a href="index.html">Home</a></li>
+							<li class = "dropdown fuaa">
+							<!-- This is where the user can filter the events by date in poster list view-->
+								<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Date<b class = "caret"></b></a>
+								<ul class = "dropdown-menu">
+									<li><a href = "#">Today</a></li>
+									<li><a href = "#">Tomorrow</a></li>
+									<li><a href = "#">This Week</a></li>
+									<li><a href = "#">Next Week</a></li>
+									<li><a href = "#">This Month</a></li>
+									<li><a href = "#">Next Month</a></li>
+								</ul>
+							</li>
+							<li class = "dropdown fuaa">
+							<!-- This is where the user can filter the events by genre in poster list view-->
+								<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Genre <b class = "caret"></b></a>
+								<ul class = "dropdown-menu">
+								
+									<li id = "all" class = "generic genre"><a href = "#">All</a></li> 
+									<li id = "house" class = "genre"><a href = "#">House</a></li> 
+									<li id = "techno" class = "genre"><a href = "#">Techno</a></li> 
+									<li id = "trance" class = "genre"><a href = "#">Trance</a></li> 
+									<li id = "electro" class = "genre"><a href = "#">Electro</a></li>  
+									<li id = "dnb" class = "genre"><a href = "#">Drum n' Bass</a></li> 
+									<li id = "other" class = "generic genre"><a href = "#">Other</a></li> 
+								</ul>
+							
+							
+							</li>
+							
+							<li class = "fuaa"><a href="calendar.html">Calendar</a></li>
+						
+							
+							
+						</ul>	
+			</div>
+		</div>
+
+		<div class="wrapper">
+		
+			<div class="container stage">
+			
+				<div class="posters bars">
+					<ul class="img-list">
+						<li>
+							<img src="css/friday-1st-may-4.jpg" class="img-responsive">
+							<span class="text-content"><span><h3><a href="#">Details & Tickets</a></h3></span></span>
+						</li>
+						
+						<li>
+							<img src="css/Route94-Cover.jpg" class="img-responsive">
+							<span class="text-content"><span><h3><a href="#">Details & Tickets</a></h3></span></span>
+						</li>
+					
+						<li>
+							<img src="css/ss.jpg" class="img-responsive"
+							srcset="css/ss.jpg 1100w,
+									css/wo-med.jpg 550w"
+								sizes="100%"
+							>
+							<span class="text-content"><span><h3><a href="#">Details & Tickets</a></h3></span></span>
+						</li>
+						<li>
+							<img src="css/wo.jpg" class="img-responsive">
+							<span class="text-content"><span><h3><a href="#">Details & Tickets</a></h3></span></span>
+						</li>
+						<li>
+							<img src="css/woc.jpg" class="img-responsive">
+							<span class="text-content"><span><h3><a href="#">Details & Tickets</a></h3></span></span>
+						</li>
+						<li>
+							<img src="css/rs.jpg" class="img-responsive">
+							<span class="text-content"><span><h3><a href="#">Details & Tickets</a></h3></span></span>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jqueery.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script>
+			(function($){
+				$(window).load(function(){
+					$(".posters").mCustomScrollbar(
+					{
+					autoHideScrollbar:true,
+					scrollButtons:{scrollType: "stepped"},
+					scrollButtons:{ scrollAmount: 900 }
+					}
+					);
+					
+				});
+			})(jQuery);
+		</script>
+		
+	</body>
+	
+</html>

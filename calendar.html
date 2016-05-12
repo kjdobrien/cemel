@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name = "viewport" content "width = device-width, initial-scale = 1.0">
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		<link rel="stylesheet" href="scrollbar/jquery.mCustomScrollbar.css" />
+		<link href = "css/styles.css" rel = "stylesheet">
+		<title>Cork Electronic Event Listings</title>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/jquery-ui-datepicker.min.js"></script>
+		<script>
+			$('#calendar').datepicker({
+				inline: true,
+				firstDay: 1,
+				showOtherMonths: true,
+				dayNamesMin: ['Sun', 'Mon', 'Tue','Wed', 'Thu', 'Fri', 'Sat']
+			});
+		</script>
+		<script src="scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script>
+			(function($){
+				$(window).load(function(){
+				$(".posters").mCustomScrollbar(
+				{autoHideScrollbar:true}
+				
+				);
+				
+			});
+			})(jQuery);
+		</script>
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container bars">
+				<a href = "#" class = "navbar-brand bars">Cork Electronic Music Event Listings</a>
+				<ul class = "nav navbar-nav navbar-right bars">
+				
+							
+							<li class = "fuaa"><a href="index.html">Home</a></li>
+							<li class = "dropdown">
+							<!-- This is where the user can filter the events by date in calendar view-->
+								<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Date<b class = "caret"></b></a>
+								<ul class = "dropdown-menu">
+									<li><a href = "#">Today</a></li>
+									<li><a href = "#">Tomorrow</a></li>
+									<li><a href = "#">This Week</a></li>
+									<li><a href = "#">Next Week</a></li>
+									<li><a href = "#">This Month</a></li>
+									<li><a href = "#">Next Month</a></li>
+								</ul>
+							</li>
+							<li class = "dropdown">
+							<!-- This is where the user can filter the events by genre in calendar view-->
+								<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Genre <b class = "caret"></b></a>
+								<ul class = "dropdown-menu">
+								
+									<li id = "all" class = "generic genre"><a href = "#">All</a></li> 
+									<li id = "house" class = "genre"><a href = "#">House</a></li> 
+									<li id = "techno" class = "genre"><a href = "#">Techno</a></li> 
+									<li id = "trance" class = "genre"><a href = "#">Trance</a></li> 
+									<li id = "electro" class = "genre"><a href = "#">Electro</a></li>  
+									<li id = "dnb" class = "genre"><a href = "#">Drum n' Bass</a></li> 
+									<li id = "other" class = "generic genre"><a href = "#">Other</a></li> 
+								</ul>
+							
+							
+							</li>
+							
+							<li><a href="#">Calendar</a></li>
+						
+							
+							
+						</ul>	
+			</div>
+		</div>
+		
+		<div class ="wrapper">
+			<div class = "well">
+				
+					
+					
+				<div id = "calendar" class="table-responsive">
+					<table class="table table-bordered">
+						<tr>
+							<th>Monday</th><th>Tuesday</th><th>Wenesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+						</tr>
+						<tr>
+							<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+						</tr>
+						<tr>
+							<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+						</tr>
+						<tr>
+							<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+						</tr>
+						<tr>
+							<td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td>
+						</tr>
+						<tr>
+							<td>.</td><td>.</td><td>.</td><td>Test<br/>test</td><td>.</td><td>.</td><td>.</td>
+						</tr>
+						<tr>
+							<td>.</td><td>.</td><td>.</td><td>.</td><td>..</td><td>.</td><td>.</td>
+						</tr>
+					</table>
+				</div>
+			
+			</div>
+		
+		
+		</div>
+		
+		
+	</body>
+	
+</html>
